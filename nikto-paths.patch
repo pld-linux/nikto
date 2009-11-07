@@ -15,7 +15,16 @@ diff -burNp nikto-2.1.0/nikto.conf nikto-2.1.0-dud/nikto.conf
  NMAPOPTS=-P0
  
  # ports never to scan
-@@ -61,6 +61,6 @@ CHECKMETHODS=HEAD GET
+@@ -18,7 +18,7 @@
+ #SKIPIDS=
+ 
+ # if Nikto is having difficulty finding the 'plugins', set the full install path here
+-# EXECDIR=/usr/local/nikto
++EXECDIR=/usr/share/nikto
+ 
+ # the default HTTP version to try... can/will be changed as necessary
+ DEFAULTHTTPVER=1.0
+@@ -61,6 +61,6 @@
  
  # If you want to specify the location of any of the files, specify them here
  # EXECDIR=/opt/nikto
