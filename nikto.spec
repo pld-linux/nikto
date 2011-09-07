@@ -1,12 +1,12 @@
 Summary:	Web server assessment tool
 Summary(pl.UTF-8):	Skrypt do testowania zabezpieczeń serwera WWW
 Name:		nikto
-Version:	2.1.1
+Version:	2.1.4
 Release:	1
 License:	GPL
 Group:		Networking
 Source0:	http://www.cirt.net/nikto/%{name}-%{version}.tar.bz2
-# Source0-md5:	4a7ca9634190eba8cac9847117a72446
+# Source0-md5:	0d58d9ca27b9f387b60130e125db8687
 URL:		http://www.cirt.net/nikto2/
 Patch0:		%{name}-paths.patch
 Suggests:	nmap

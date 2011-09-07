@@ -14,7 +14,7 @@ diff -burNp nikto-2.1.1/nikto.conf nikto-2.1.1-dud/nikto.conf
  
  # the default HTTP version to try... can/will be changed as necessary
  DEFAULTHTTPVER=1.0
-@@ -68,6 +68,7 @@ CHECKMETHODS=HEAD GET
+@@ -68,9 +68,9 @@ CHECKMETHODS=HEAD GET
  
  # If you want to specify the location of any of the files, specify them here
  # EXECDIR=/opt/nikto
@@ -24,4 +24,6 @@ diff -burNp nikto-2.1.1/nikto.conf nikto-2.1.1-dud/nikto.conf
 +PLUGINDIR=/usr/share/nikto/plugins
 +TEMPLATEDIR=/usr/share/nikto/templates
 +DOCDIR=/usr/share/doc/nikto
-+
+ 
+ # Default plugin macros
+ @@MUTATE=dictionary;subdomain
