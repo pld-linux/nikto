@@ -1,12 +1,12 @@
 Summary:	Web server assessment tool
 Summary(pl.UTF-8):	Skrypt do testowania zabezpieczeń serwera WWW
 Name:		nikto
-Version:	2.1.4
+Version:	2.1.5
 Release:	1
 License:	GPL
 Group:		Networking
 Source0:	http://www.cirt.net/nikto/%{name}-%{version}.tar.bz2
-# Source0-md5:	0d58d9ca27b9f387b60130e125db8687
+# Source0-md5:	35ac9f11ab4aa0d5b8449748338bd159
 URL:		http://www.cirt.net/nikto2/
 Patch0:		%{name}-paths.patch
 Suggests:	nmap
@@ -38,7 +38,7 @@ install -d $RPM_BUILD_ROOT{%{_sysconfdir},%{_bindir},%{_datadir}/%{name},%{_mand
 
 install nikto.conf $RPM_BUILD_ROOT%{_sysconfdir}
 cp -a nikto.pl $RPM_BUILD_ROOT%{_bindir}
-cp -a plugins templates $RPM_BUILD_ROOT%{_datadir}/%{name}
+cp -a databases plugins templates $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -a docs/nikto.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean

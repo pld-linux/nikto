@@ -1,29 +1,29 @@
-diff -burNp nikto-2.1.1/nikto.conf nikto-2.1.1-dud/nikto.conf
---- nikto-2.1.1/nikto.conf	2010-02-02 20:28:54.000000000 +0100
-+++ nikto-2.1.1-dud/nikto.conf	2010-02-07 00:28:22.201055867 +0100
-@@ -22,10 +22,10 @@ USERAGENT=Mozilla/4.75 (Nikto/@VERSION) 
+diff -urN nikto-2.1.5.orig/nikto.conf nikto-2.1.5/nikto.conf
+--- nikto-2.1.5.orig/nikto.conf	2012-12-01 11:55:47.000000000 +0100
++++ nikto-2.1.5/nikto.conf	2012-12-01 12:05:49.000000000 +0100
+@@ -23,7 +23,7 @@
  #SKIPIDS=
- 
- # if Nikto is having difficulty finding the 'plugins', set the full install path here
--# EXECDIR=/usr/local/nikto
-+EXECDIR=/usr/share/nikto
  
  # The DTD
 -NIKTODTD=docs/nikto.dtd
-+NIKTODTD=/usr/share/doc/nikto/nikto.dtd
++NIKTODTD=/usr/share/doc/nikto-2.1.5/nikto.dtd
  
  # the default HTTP version to try... can/will be changed as necessary
  DEFAULTHTTPVER=1.0
-@@ -68,9 +68,9 @@ CHECKMETHODS=HEAD GET
+@@ -61,11 +61,11 @@
+ CHECKMETHODS=HEAD GET
  
  # If you want to specify the location of any of the files, specify them here
- # EXECDIR=/opt/nikto
--# PLUGINDIR=/opt/nikto/plugins
--# TEMPLATEDIR=/opt/nikto/templates
--# DOCDIR=/opt/nikto/docs
-+PLUGINDIR=/usr/share/nikto/plugins
-+TEMPLATEDIR=/usr/share/nikto/templates
-+DOCDIR=/usr/share/doc/nikto
+-# EXECDIR=/opt/nikto				# Location of Nikto
+-# PLUGINDIR=/opt/nikto/plugins			# Location of plugin dir
+-# DBDIR=/opt/nikto/databases			# Location of plugin dir
+-# TEMPLATEDIR=/opt/nikto/templates		# Location of tempmlate dir
+-# DOCDIR=/opt/nikto/docs			# Location of docs dir
++EXECDIR=/usr/share/nikto			# Location of Nikto
++PLUGINDIR=/usr/share/nikto/plugins		# Location of plugin dir
++DBDIR=/usr/share/nikto/databases		# Location of plugin dir
++TEMPLATEDIR=/usr/share/nikto/templates		# Location of tempmlate dir
++DOCDIR=/usr/share/doc/nikto-2.1.5		# Location of docs dir
  
  # Default plugin macros
  @@MUTATE=dictionary;subdomain
